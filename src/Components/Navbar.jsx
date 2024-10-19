@@ -26,14 +26,14 @@ function Navbar() {
         </div>
 
         {/* Desktop Navigation Links */}
-        <ul className="hidden md:flex gap-5 items-start font-medium">
+        <ul className="hidden md:flex gap-10 items-start font-medium">
           <li>
             {/* Search Bar */}
-            <div className="relative mx-4 flex justify-end w-full">
+            <div className="relative mx-4 flex justify-end w-full ">
               <input
                 type="text"
                 placeholder="Search items"
-                className="border w-full px-28 py-2 placeholder:text-start"
+                className="border w-full max-w-[300px] px-14 py-2 placeholder:text-start mx-5 "
               />
               <img
                 src={asstes.search_icon}

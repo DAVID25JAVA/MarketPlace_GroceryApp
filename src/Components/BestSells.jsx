@@ -30,7 +30,7 @@ function BestSells() {
   };
 
   return (
-    <div className="my-5 px-4 sm:px-8 lg:px-16">
+    <div className="my-5 px-4 sm:px-8 lg:px-16 overflow-x-hidden">
       <div className="flex justify-between text-2xl sm:text-3xl font-medium">
         <p>Daily Best Sells</p>
         <div className="flex gap-3 sm:gap-5 text-lg font-medium">
@@ -62,7 +62,7 @@ function BestSells() {
       </div>
 
       {/* Product Section */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 pt-5">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 pt-5 w-full max-w-full">
         {filteredProducts?.map((item, index) => (
           <div
             key={index}
