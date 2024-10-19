@@ -82,9 +82,9 @@ function Navbar() {
         <div
           className={`${
             mobileMenu ? "fixed w-full" : "hidden"
-          } md:hidden bottom-0 top-0 right-0 overflow-y-auto z-20 bg-white transition-all`}
+          } md:hidden bottom-0 top-0 right-5 overflow-y-auto z-20 bg-white transition-all`}
         >
-          <div className="flex items-center justify-between px-5 py-1">
+          <div className="flex items-center justify-between  py-1">
             <img className="w-12" src={asstes.logo} alt="MarketPlace Logo" />
             <img
               className="w-10 cursor-pointer"
