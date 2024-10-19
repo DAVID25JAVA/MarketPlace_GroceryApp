@@ -52,14 +52,7 @@ function GroceryCategories() {
           >
             Fruits
           </p>
-          <p
-            onClick={() => handleCategoryChange('Nonveg')}
-            className={`cursor-pointer ${
-              selectedCategory === 'Nonveg' ? 'text-purple-600' : ''
-            }`}
-          >
-            Meat
-          </p>
+           
         </div>
       </div>
 
