@@ -35,7 +35,7 @@ function ProductCategory() {
             value={selectedCategory}  
             onChange={handleCategoryChange}  
           >
-            <option value="All">Filter by categories</option>
+            <option value="All">Filter</option>
             <option value="Vegetables" className="text-white">Vegetables</option>
             <option value="Fruits" className="text-white">Fruits</option>
             <option value="Coffee & Tea" className="text-white">Coffee & Tea</option>
