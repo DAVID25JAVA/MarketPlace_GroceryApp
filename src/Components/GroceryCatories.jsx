@@ -24,12 +24,12 @@ function GroceryCategories() {
 
   return (
     <div className="my-5">
-      <div className="flex justify-between text-3xl font-medium">
-        <p>Featured Products</p>
-        <div className="flex gap-5 text-lg font-medium">
+      <div className="flex justify-between ">
+        <p className='font-medium text-3xl'>Featured Products</p>
+        <div className="flex gap-5">
           
           <select
-            className="border bg-purple-950 text-white"
+            className="w-full sm:w-full md:w-auto flex gap-4  cursor-pointer mt-1 border px-3 py-2 sm:py bg-purple-950 text-white mb-4 sm:mb-0"
             onChange={handleCategoryChange}  
             value={selectedCategory} 
           >
