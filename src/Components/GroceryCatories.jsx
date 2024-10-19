@@ -5,10 +5,9 @@ import { IoCartOutline } from 'react-icons/io5';
 function GroceryCategories() {
   const { BuyProductByCategoris, currency } = useContext(contextData);
   const [filteredProducts, setFilteredProducts] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState('All');  
+  const [selectedCategory, setSelectedCategory] = useState('All');
 
   useEffect(() => {
-    
     if (selectedCategory === 'All') {
       setFilteredProducts(BuyProductByCategoris);
     } else {
@@ -19,8 +18,8 @@ function GroceryCategories() {
     }
   }, [BuyProductByCategoris, selectedCategory]);
 
-  const handleCategoryChange = (category) => {
-    setSelectedCategory(category);
+  const handleCategoryChange = (event) => {
+    setSelectedCategory(event.target.value); 
   };
 
   return (
@@ -28,31 +27,17 @@ function GroceryCategories() {
       <div className="flex justify-between text-3xl font-medium">
         <p>Featured Products</p>
         <div className="flex gap-5 text-lg font-medium">
-          <p
-            onClick={() => handleCategoryChange('All')}
-            className={`cursor-pointer ${
-              selectedCategory === 'All' ? 'text-purple-600' : ''
-            }`}
+          
+          <select
+            className="border bg-purple-950 text-white"
+            onChange={handleCategoryChange}  
+            value={selectedCategory} 
           >
-            All
-          </p>
-          <p
-            onClick={() => handleCategoryChange('Vegetable')}
-            className={`cursor-pointer ${
-              selectedCategory === 'Vegetable' ? 'text-purple-600' : ''
-            }`}
-          >
-            Vegetables
-          </p>
-          <p
-            onClick={() => handleCategoryChange('Fruits')}
-            className={`cursor-pointer ${
-              selectedCategory === 'Fruits' ? 'text-purple-600' : ''
-            }`}
-          >
-            Fruits
-          </p>
-           
+            <option value="All">All</option>
+            <option value="Vegetable">Vegetables</option>
+            <option value="Fruits">Fruits</option>
+            <option value="Meat">Meat</option>
+          </select>
         </div>
       </div>
 

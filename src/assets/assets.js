@@ -151,7 +151,7 @@ export const BuyProductByCategoris = [
     {
         _id: 9,
         name: "KashmiriDish",
-        type:"Nonveg",
+        type:"Meat",
         image: KashmiriDish,
         upcomming:"new",
         price: 2,
@@ -160,7 +160,7 @@ export const BuyProductByCategoris = [
     {
         _id: 10,
         name: "Mutton Marag",
-        type:"Nonveg",
+        type:"Meat",
         image: MuttonMarag,
         price: 2,
         quantity:"1kg"
@@ -168,7 +168,7 @@ export const BuyProductByCategoris = [
     {
         _id: 11,
         name: "Ahuna Mutton",
-        type:"Nonveg",
+        type:"Meat",
         image: AhunaMutton,
         upcomming:"new",
         price: 2,
@@ -177,7 +177,7 @@ export const BuyProductByCategoris = [
     {
         _id: 12,
         name: "Rogan josh",
-        type:"Nonveg",
+        type:"Meat",
         image:Roganjosh,
         price: 2,
         quantity:"1kg"
